@@ -21,4 +21,38 @@ It auto-detects whether each subdomain is live over HTTPS or HTTP, prints the re
 *To install dependencies:*
 
 **bash**
+
 pip install requests
+
+Usage
+1. Prepare Your Subdomain List
+
+Create a text file (e.g., subdomains.txt) with one subdomain per line:
+example.com
+www.example.com
+test.example.com
+
+2. Run the Script
+
+bash
+
+python3 script.py subdomains.txt
+You’ll see live domains/protocols and their status codes printed to the console.
+
+3. Save Output to File
+
+Add the -o or --output flag:
+
+bash
+
+python3 script.py subdomains.txt -o live_subdomains.txt
+
+4. Show Help
+
+bash
+
+python3 script.py -h
+
+Example Output:
+https://example.com [200]
+http://old.example.com [301]
