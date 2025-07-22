@@ -25,7 +25,7 @@ pip install requests
 
 1. Prepare Your Subdomain List
 
-Create a text file (e.g., subdomains.txt) with one subdomain per line:
+ - Create a text file (e.g., subdomains.txt) with one subdomain per line:
 example.com
 www.example.com
 test.example.com
